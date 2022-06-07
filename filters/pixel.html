@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="What is an original content? / Pushing the algorithm to the boundaries / Questioning the opacity of the algorithm / Protect the Youtube Poopers">
+    <meta name="keywords" content="YTP, YouTube, YTPoop, copyright, activism, manifesto">
+    <meta name="author" content="Marco Pagan">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="Can you recognize me?"/>
+    <title>Pixel | Can you recognize me?</title>
+    <link rel="icon" type="image/png" href="../assets/img/fav.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script type="text/javascript">
+        function updateValue(num) {
+            document.getElementById("slider_caption"+num).innerHTML = document.getElementById("slider"+num).value + "px";
+        }
+    </script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav_label one_third">TOOLS</div>
+        <div class="nav_label two_third">STORIES</div>
+    </nav>
+
+
+    <main>
+        <!-- TOOL -->
+        <div id="tool" class="one_third tool_wrapper">
+            <h1>Pixel</h1>
+            <form action="">
+                <label for="source">Video source</label>
+                <input type="file" id="source" name="source"><br><br>
+
+                <label id=" desc_label" for="desc">Pixel width</label>
+                <input type="range" min="1" max="500" value="10" class="slider" id="slider0" oninput="updateValue(0)">
+                <small id="slider_caption0">10px</small>
+
+                <label id=" desc_label" for="desc">Pixel height</label>
+                <input type="range" min="1" max="500" value="10" class="slider" id="slider1" oninput="updateValue(1)">
+                <small id="slider_caption1">10px</small>
+
+                <label for="preview">Preview</label>
+                <input type="text" id="preview" name="preview" disabled><br><br>
+
+                <label for="sendBtn"></label>
+                <input id="sendBtn" type="submit" value="Process">
+            </form>
+        </div>
+
+
+        <!-- STORY -->
+        <div id="story" class="two_third">
+            <!-- Stories wrapper -->
+            <div id="stories_wrapper">
+                <h1>Can we lose this content forever?</h1>
+                <p>Nocoldiz began his pooper career in 2009 with the video The Assault of the Mutant Chicks, inspired by American youtubers who belonged to the same video strand. The channel's success first came in 2012 with the videos The Supervillain Plan of Saruman and The Lord of Lords, based on the film saga The Lord of the Rings, and later in 2013 with The True Story of Harry Potter, about the film saga of the same name, spreading the catchphrase of Hagrid's character repeating over and over again "No, he's dead to me," "No, he's still around to me." The catchphrase is then repeated both in subsequent videos by the YouTuber and by some of his fellow poopers.<sup>1</sup></p>
+
+                <img src="../assets/img/stories/6_nocoldiverse.jpg" width="500">
+                <figcaption>Cover image of the Nocoldiverse</figcaption>
+                <br><br>
+
+                <p>But the video that peaks in viewership and secures him many of his current subscribers is a video riding on the success of the television series Game of Thrones, which achieves considerable success, blowing up on Facebook: one of the most famous scenes in the video features King Robert's character obsessively shouting "Wine!" This continuously repeated exclamation will become a real catchphrase among Game of Thrones viewers, even among those who have never seen the poop in question.<br>On September 30, 2019, after 10 years of operation, the channel was suspended from the platform for spam, scam, or misleading commercial content. On October 4, 2019, the suspension was upheld despite an appeal.<sup>2</sup> This event likely occurred due to changes in Google AdSense policy that occurred on the same day as the suspension. At the time of the suspension, the channel had 312,000 subscribers.</p>
+
+                <img src="../assets/img/stories/6_41fcswdhgrp31.jpg" width="700">
+                <figcaption>Nocolodiz's instagram post announcing ban from YouTube, 2019</figcaption>
+                <br><br>
+
+                <p>Years later, the pooper has still not received a response from a human YouTube manager regarding the reason for the ban, but only from automatic BOTs. Now Nocoldiz has reopened an archive channel but has moved to other platforms.</p>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/j-PCeGm1n4k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <figcaption><i>They BANNED me and I still don’t know why</i>, Nocoldiz, 2020</figcaption>
+                <br><br>
+
+
+
+                <small>
+                    <a href="https://youtube.fandom.com/it/wiki/Nocoldiz" target="blank_">Source 1 ↗</a>
+                    <br>
+                    <a href="https://www.reddit.com/r/italy/comments/dbejvp/account_youtube_di_nocoldiz_sospeso_per_ripetute/" target="blank_">Source 2 ↗</a>
+                </small>
+            </div>
+        </div>
+
+
+    <h1 id="homebtn"><a href="../">Home</a></h1>
+
+    </main>
+
+
+
+  </body>
+</html>

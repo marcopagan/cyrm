@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="What is an original content? / Pushing the algorithm to the boundaries / Questioning the opacity of the algorithm / Protect the Youtube Poopers">
+    <meta name="keywords" content="YTP, YouTube, YTPoop, copyright, activism, manifesto">
+    <meta name="author" content="Marco Pagan">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="Can you recognize me?"/>
+    <title>Dithering | Can you recognize me?</title>
+    <link rel="icon" type="image/png" href="../assets/img/fav.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script type="text/javascript">
+        function updateValue() {
+            document.getElementById("slider_caption").innerHTML = document.getElementById("slider0").value;
+        }
+    </script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav_label one_third">TOOLS</div>
+        <div class="nav_label two_third">STORIES</div>
+    </nav>
+
+
+    <main>
+        <!-- TOOL -->
+        <div id="tool" class="one_third tool_wrapper">
+            <h1>Dithering</h1>
+            <form action="">
+                <label for="source">Video source</label>
+                <input type="file" id="source" name="source"><br><br>
+
+                <label for="category">Algorithm</label>
+                <select id="category" name="category">
+                    <option value="vertical">Floyd-Steinberg</option>
+                    <option value="horizontal">Jarvis</option>
+                    <option value="horizontal">Stucki</option>
+                    <option value="horizontal">Atkinson</option>
+                    <option value="horizontal">Burkes</option>
+                    <option value="horizontal">Sierra</option>
+                </select><br><br>
+
+                <label id=" desc_label" for="desc">Density</label>
+                <input type="range" min="1" max="100" value="10" class="slider" id="slider0" oninput="updateValue()">
+                <small id="slider_caption">10</small>
+
+                <label class="check_wrapper">Monochrome
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <br><br>
+
+                <label for="preview">Preview</label>
+                <input type="text" id="preview" name="preview" disabled><br><br>
+
+                <label for="sendBtn"></label>
+                <input id="sendBtn" type="submit" value="Process">
+            </form>
+        </div>
+
+
+        <!-- STORY -->
+        <div id="story" class="two_third">
+            <!-- Stories wrapper -->
+            <div id="stories_wrapper">
+                <h1>Contaminations from and to other styles</h1>
+                <p>Youtube Poops are connected with a lot of TV and internet video subgenres. Now we will take a look of some of them.</p>
+                <ul>
+                    <li>Anime music video (AVM): is a fan-made music video consisting of clips from one or more Japanese animated shows or movies set to an audio track, often songs or promotional trailer audio. The term is generally specific to Japanese anime, however, it can occasionally include footage from other mediums, such as American animation, live action, or video games. AMVs are not official music videos released by the musicians, they are fan compositions which synchronize edited video clips with an audio track. AMVs are most commonly posted and distributed over the Internet through AnimeMusicVideos.org, video downloads and YouTube. Anime conventions frequently run AMV contests who usually show the finalists/winner's AMVs.<sup>1</sup></li>
+
+                    <br>
+                    <li>Animutation (also reffered as fanimutation): is a form of web-based computer animation, typically created in Adobe Flash and characterized by unpredictable montages of pop-culture images set to music, often in a language foreign to the intended viewers. It is not to be confused with manual collage animation (e.g., the work of Stan Vanderbeek and Terry Gilliam), which predates the Internet.<sup>2</sup></li>
+                    
+                    <br>
+                    <img src="../assets/img/stories/4_jack-black-animutation.gif" width="350">
+                    <figcaption>Animutation of Jack Black</figcaption>
+
+                    <br>
+                    <li>Cult Toons (also referred to by Exceeda as 'AKA Cult Toons'): was a series of 30-minute slot experimental alternate comedy VJ (video jockey) videos, directed by Xavier Perkins and Brett Foraker. The inclusion of seemingly irrelevant and obscure clips from films and cartoons gave the show a very surreal and non sequitur quality. For example, common features of the re-edited cartoons would include repeated footage (when a character would say "You can say that again" the previous line would often be repeated), freezing the footage (usually after a line such as "Hold everything!" or "Stop!"), overdubbing voices (including randomly replacing lines with the theme music to The Godzilla Power Hour), and repeating a line or sound effect and adding drum beats and record scratches over it, turning it into a brief hip-hop song.<sup>3</sup></li>
+                    <br>
+                    <li>Remix culture (sometimes read-write culture): is a term describing a society that allows and encourages derivative works by combining or editing existing materials to produce a new creative work or product. A remix culture would be, by default, permissive of efforts to improve upon, change, integrate, or otherwise remix the work of copyright holders without their permission. While combining elements has always been a common practice of artists of all domains throughout human history, the growth of exclusive copyright restrictions in the last several decades limits this practice more and more by the legal chilling effect.<sup>4</sup></li>
+                    <br>
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/htknf62yDGo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figcaption>A documentary about vidding, DZENITA, 2021</figcaption>
+                    <br><br>
+
+                    <li>Vidding: is a fan labor practice in media fandom of creating music videos from the footage of one or more visual media sources, thereby exploring the source itself in a new way. The creator may choose video clips in order to focus on a single character, support a particular romantic pairing between characters, criticize or celebrate the original text, or point out an aspect of the TV show or film that they find under-appreciated. The resulting video may then be shared via one or more social media outlets and online video platforms such as YouTube. The creators refer to themselves as "vidders", their product as "vids", "fanvids", "songvids" or the more recently adopted name "edits" and the act itself as vidding.<sup>5</sup></li>
+
+                    <br>
+                </ul>
+
+                <small>
+                    <a href="https://en.wikipedia.org/wiki/Anime_music_video" target="blank_">Source 1 ↗</a>
+                    <br>
+                    <a href="https://en.wikipedia.org/wiki/Animutation" target="blank_">Source 2 ↗</a>
+                    <br>
+                    <a href="https://en.wikipedia.org/wiki/AKA_Cartoon_Network" target="blank_">Source 3 ↗</a>
+                    <br>
+                    <a href="https://en.wikipedia.org/wiki/Remix_culture" target="blank_">Source 4 ↗</a>
+                    <br>
+                    <a href="https://en.wikipedia.org/wiki/Vidding" target="blank_">Source 5 ↗</a>
+                </small>
+            </div>
+        </div>
+
+
+    <h1 id="homebtn"><a href="../">Home</a></h1>
+
+    </main>
+
+
+
+  </body>
+</html>

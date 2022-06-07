@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="What is an original content? / Pushing the algorithm to the boundaries / Questioning the opacity of the algorithm / Protect the Youtube Poopers">
+    <meta name="keywords" content="YTP, YouTube, YTPoop, copyright, activism, manifesto">
+    <meta name="author" content="Marco Pagan">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="Can you recognize me?"/>
+    <title>Add filter | Can you recognize me?</title>
+    <link rel="icon" type="image/png" href="assets/img/fav.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript">
+        function triggerFilter(id, showElem){
+            let elem = document.getElementById(id);
+            let storiesWrapper = document.getElementById("stories_wrapper");
+            let homeTxt = document.getElementById("homebtn").children[0];
+            console.log();
+            if (showElem) {
+                elem.style.display = "block";
+                storiesWrapper.style.display = "none";
+                homeTxt.innerHTML = "Can you recognize me?";
+            }else{
+                elem.style.display = "none";
+                storiesWrapper.style.display = "block";
+                homeTxt.innerHTML = "Home";
+            }
+            
+        }
+    </script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav_label one_third">TOOLS</div>
+        <div class="nav_label two_third">STORIES</div>
+    </nav>
+
+
+    <main>
+        <!-- TOOL -->
+        <div id="tool" class="one_third">
+            <section class="filter field">IMAGE MIXING</section>
+
+            <a onmouseenter="triggerFilter('fl_split', true)" onmouseleave="triggerFilter('fl_split', false)" class="filter_wrapper" href="filters/split.html">
+                <section class="filter">Split screen</section>
+            </a>
+            
+            <a onmouseenter="triggerFilter('fl_stripe', true)" onmouseleave="triggerFilter('fl_stripe', false)" class="filter_wrapper" href="filters/stripe.html">
+                <section class="filter">Stripe</section>
+            </a>
+
+
+
+            <section class="filter field">IMAGE DEGRADING</section>
+
+            <a onmouseenter="triggerFilter('fl_ascii', true)" onmouseleave="triggerFilter('fl_ascii', false)" class="filter_wrapper" href="filters/ascii.html">
+                <section class="filter">ASCII</section>
+            </a>
+            
+            <a onmouseenter="triggerFilter('fl_dithering', true)" onmouseleave="triggerFilter('fl_dithering', false)" class="filter_wrapper" href="filters/dithering.html">
+                <section class="filter">Dithering</section>
+            </a>
+            
+            <a onmouseenter="triggerFilter('fl_noise', true)" onmouseleave="triggerFilter('fl_noise', false)" class="filter_wrapper" href="filters/noise.html">
+                <section class="filter">Noise</section>
+            </a>
+
+            <a onmouseenter="triggerFilter('fl_pixel', true)" onmouseleave="triggerFilter('fl_pixel', false)" class="filter_wrapper" href="filters/pixel.html">
+                <section class="filter">Pixel</section>
+            </a>
+
+
+
+            <section class="filter field">IMAGE ALTERATION</section>
+
+            <a onmouseenter="triggerFilter('fl_mirror', true)" onmouseleave="triggerFilter('fl_mirror', false)" class="filter_wrapper" href="filters/mirror.html">
+                <section class="filter">Mirror</section>
+            </a>
+
+            <a onmouseenter="triggerFilter('fl_stretch', true)" onmouseleave="triggerFilter('fl_stretch', false)" class="filter_wrapper" href="filters/stretch.html">
+                <section class="filter">Stretch</section>
+            </a>
+
+            <a onmouseenter="triggerFilter('fl_tile', true)" onmouseleave="triggerFilter('fl_tile', false)" class="filter_wrapper" href="filters/tile.html">
+                <section class="filter">Tile</section>
+            </a>
+
+            <a onmouseenter="triggerFilter('fl_add', true)" onmouseleave="triggerFilter('fl_add', false)" href="add.html" id="filter_plus" class="filter_wrapper">
+                <section class="filter">+</section>
+            </a>
+        </div>
+
+
+        <!-- STORY -->
+        <div id="story" class="two_third">
+            <!-- Stories wrapper -->
+            <div id="stories_wrapper">
+                <h1>Add a new filter/story</h1>
+                <form action="">
+                    <hr>
+                    <h3>FILTER</h3>
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name"><br><br>
+
+                    <label id=" desc_label" for="desc">Description</label>
+                    <textarea type="text" id="desc" name="desc"></textarea><br><span style="float: right; margin-right: 40px">max 150 characters</span>
+                    <br><br>
+
+                    <label for="category">Category</label>
+                    <select id="category" name="category">
+                        <option value="volvo">Image Mixing</option>
+                        <option value="saab">Image Degrading</option>
+                        <option value="fiat">Image Alteration</option>
+                    </select><br><br>
+
+                    <label for="source">Cover image</label>
+                    <input type="file" id="source" name="source"><br><br>
+
+                    <label for="sketch">p5.js sketch</label>
+                    <input type="url" id="sketch" name="sketch"><br><br><br><br>
+
+                    <hr>
+                    <h3>STORY</h3>
+
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title"><br><br>
+
+                    <label for="stories">Text</label>
+                    <textarea type="text" id="stories" name="stories"></textarea><br><span style="float: right; margin-right: 40px">max 1000 words</span>
+                    <br><br>
+
+                    <label for="source">Image 1</label>
+                    <input type="file" id="source" name="source"><br><br>
+
+                    <label for="source">Image 2</label>
+                    <input type="file" id="source" name="source"><br><br>
+
+                    <label for="source">Image 3</label>
+                    <input type="file" id="source" name="source"><br><br>
+
+                    <label for="sendBtn"></label>
+                    <input id="sendBtn" type="submit" value="Submit">
+                </form>
+            </div>
+
+            <!-- filters showcase -->
+            <article class="filter_section" id="fl_split">
+                <img src="assets/img/filters/split.jpg">
+                <div class="filter_desc">
+                    <p>This tool merge two videos by a line. Can be adjusted in position and orientation.</p>
+                    <p class="filter_text_source">Image from the first video considered Youtube Poop, SuperYoshi, 2004</p>
+                </div>
+            </article>
+
+            <article class="filter_section" id="fl_stripe">
+                <img src="assets/img/filters/stripe.jpg">
+                <div class="filter_desc">
+                    <p>This tool combine two different videos alternating stripes between them. Can be used instead of a traditional split screen.</p>
+                    <p class="filter_text_source">Image from the <i>YouTube Poop Tutorial</i>, MoBrosStudios, 2011</p>
+                </div>
+            </article>
+
+            <article class="filter_section" id="fl_ascii">
+                <img src="assets/img/filters/ascii.jpg">
+                <div class="filter_desc">
+                    <p>This tool convert the pixels in ASCII glyphs with a color connected. It's possible to change the density and the background color.</p>
+                    <p class="filter_text_source">Image from <i>this isn't a round</i>, pacboy, 2019</p>
+                </div>
+            </article>
+
+            <article class="filter_section" id="fl_dithering">
+                <img src="assets/img/filters/dithering.jpg">
+                <div class="filter_desc">
+                    <p>This tool apply a dithering algoritm to your video in order to reduce the quality and the weight of the infomation.</p>
+                    <p class="filter_text_source">Image from <i>The History of Vidding</i>, Hannah Hartleb, 2021</p>
+                </div>
+            </article>
+
+            <article class="filter_section" id="fl_noise">
+                <img src="assets/img/filters/noise.jpg">
+                <div class="filter_desc">
+                    <p>This tool apply a noise disturb layer. A monochromatic or colored filter can be applied to your video</p>
+                    <p class="filter_text_source">Image from <i>free the anoro</i>, Kevin11, 2018</p>
+                </div>
+            </article>
+
+            <article class="filter_section" id="fl_pixel">
+                <img src="assets/img/filters/pixel.jpg">
+                <div class="filter_desc">
+                    <p>This tool increases the pixel size your video in order to reduce the quality and the weight of the infomation.</p>
+                    <p class="filter_text_source">Image from “They BANNED me and I still don’t know why”, Nocoldiz, 2020</p>
+                </div>
+            </article>
+
+            <article class="filter_section" id="fl_mirror">
+                <img src="assets/img/filters/mirror.jpg">
+                <div class="filter_desc">
+                    <p>This tool allows to flip a video horizontally or vertically. Is possible also to mirror a video in two sides.</p>
+                    <p class="filter_text_source">Image from <i>YouTube COPYRIGHT Rules 2021 | LAWYER’s EASY Tutorial!!!</i> Ian Corzine, 2021</p>
+                </div>
+            </article>
+
+            <article class="filter_section" id="fl_stretch">
+                <img src="assets/img/filters/stretch.jpg">
+                <div class="filter_desc">
+                    <p>This tool stretch your video. From the options is possible to adjust the amount of stretching and the direction.</p>
+                    <p class="filter_text_source">Image from the meme called <i>Wide Putin</i>, lerrific, 2020</p>
+                </div>
+            </article>
+
+            <article class="filter_section" id="fl_tile">
+                <img src="assets/img/filters/tile.jpg">
+                <div class="filter_desc">
+                    <p>This tool multiplies the source into a grid. The user can choose the amount of columns and rows.</p>
+                    <p class="filter_text_source">Image from <i>[YTP] Turning - Turning Red</i>, wimbow, 2022</p>
+                </div>
+            </article>
+
+             <article class="filter_section" id="fl_add">
+                <img src="assets/img/filters/add.jpg">
+                <div class="filter_desc">
+                    <p>In this section you can submit a new filter for the toolkit. Add a p5.js sketch related to your edit and share it among the poopers community.</p>
+                </div>
+            </article>
+
+
+    <h1 id="homebtn"><a href="index.html">Home</a></h1>
+
+    </main>
+
+
+
+  </body>
+</html>

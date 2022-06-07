@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="What is an original content? / Pushing the algorithm to the boundaries / Questioning the opacity of the algorithm / Protect the Youtube Poopers">
+    <meta name="keywords" content="YTP, YouTube, YTPoop, copyright, activism, manifesto">
+    <meta name="author" content="Marco Pagan">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="Can you recognize me?"/>
+    <title>Can you recognize me?</title>
+    <link rel="icon" type="image/png" href="assets/img/fav.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript">
+        let guideStep = 1;
+        function triggerFilter(id, showElem){
+            let elem = document.getElementById(id);
+            let manifesto = document.getElementById("manifesto");
+            if (showElem) {
+                elem.style.display = "block";
+                manifesto.style.display = "none";
+            }else{
+                elem.style.display = "none";
+                manifesto.style.display = "block";
+            }
+            
+        }
+
+        function introduction(step){
+            let guideWrapper = document.getElementById("guide_wrapper");
+            let title = document.getElementById("guide_title");
+            let par = document.getElementById("guide_text");
+            let arrowSx = document.getElementById("guide_sx");
+            let arrowDx = document.getElementById("guide_dx");
+            document.getElementById("guide_counter").innerHTML = step+"/3";
+            if (step == 1) {
+                arrowSx.style.display = "none";
+                title.innerHTML = "Can you recognize me?";
+                par.innerHTML = "This space is meant to be a place for sharing <br> and empowerment concerning YouTube Poops <br>and poopers.";
+            }else{
+                arrowSx.style.display = "flex";
+            }
+
+            if (step == 2) {
+                title.innerHTML = "Tools";
+                par.innerHTML = "On the left there is the filter section. You can test on the algorithm some pieces of the video before using them on your video.";
+                document.getElementById("tool").style.filter = "none";
+            }else{
+                document.getElementById("tool").style.filter = "blur(3px)";
+            }
+
+            if (step == 3) {
+                arrowDx.children[0].innerHTML = "Go";
+                title.innerHTML = "Stories";
+                par.innerHTML = "The right panel collects several stories about poop and the poopers condition. Browse them from the table of contents.";
+                document.getElementById("story").style.filter = "none";
+            }else{
+                arrowDx.children[0].innerHTML = ">";
+                document.getElementById("story").style.filter = "blur(3px)";
+            }
+
+            if (step == 4) {
+                guideWrapper.style.display = "none";
+                document.getElementById("tool").style.filter = "none";
+                document.getElementById("story").style.filter = "none";
+                document.getElementsByTagName("nav")[0].style.filter = "none";
+            }
+
+            guideStep = step;
+            console.log(guideStep);
+        }
+    </script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav style="filter: blur(3px)">
+        <div class="nav_label one_third">TOOLS</div>
+        <div class="nav_label two_third">STORIES</div>
+    </nav>
+
+
+    <main>
+        <!-- TOOL -->
+        <div id="tool" class="one_third" style="filter: blur(3px)">
+            <section class="filter field">IMAGE MIXING</section>
+
+            <a onmouseenter="triggerFilter('fl_split', true)" onmouseleave="triggerFilter('fl_split', false)" class="filter_wrapper" href="filters/split.html">
+                <section class="filter">Split screen</section>
+            </a>
+            
+            <a onmouseenter="triggerFilter('fl_stripe', true)" onmouseleave="triggerFilter('fl_stripe', false)" class="filter_wrapper" href="filters/stripe.html">
+                <section class="filter">Stripe</section>
+            </a>
+
+
+
+            <section class="filter field">IMAGE DEGRADING</section>
+
+            <a onmouseenter="triggerFilter('fl_ascii', true)" onmouseleave="triggerFilter('fl_ascii', false)" class="filter_wrapper" href="filters/ascii.html">
+                <section class="filter">ASCII</section>
+            </a>
+            
+            <a onmouseenter="triggerFilter('fl_dithering', true)" onmouseleave="triggerFilter('fl_dithering', false)" class="filter_wrapper" href="filters/dithering.html">
+                <section class="filter">Dithering</section>
+            </a>
+            
+            <a onmouseenter="triggerFilter('fl_noise', true)" onmouseleave="triggerFilter('fl_noise', false)" class="filter_wrapper" href="filters/noise.html">
+                <section class="filter">Noise</section>
+            </a>
+
+            <a onmouseenter="triggerFilter('fl_pixel', true)" onmouseleave="triggerFilter('fl_pixel', false)" class="filter_wrapper" href="filters/pixel.html">
+                <section class="filter">Pixel</section>
+            </a>
+
+
+
+            <section class="filter field">IMAGE ALTERATION</section>
+
+            <a onmouseenter="triggerFilter('fl_mirror', true)" onmouseleave="triggerFilter('fl_mirror', false)" class="filter_wrapper" href="filters/mirror.html">
+                <section class="filter">Mirror</section>
+            </a>
+
+            <a onmouseenter="triggerFilter('fl_stretch', true)" onmouseleave="triggerFilter('fl_stretch', false)" class="filter_wrapper" href="filters/stretch.html">
+                <section class="filter">Stretch</section>
+            </a>
+
+            <a onmouseenter="triggerFilter('fl_add', true)" onmouseleave="triggerFilter('fl_add', false)" href="add.html" id="filter_plus" class="filter_wrapper">
+                <section class="filter">+</section>
+            </a>
+        </div>
+
+
+        <!-- STORY -->
+        <div id="story" class="two_third" style="filter: blur(3px)">
+            <!-- manifesto -->
+            <div>
+                <h1 id="manifesto">
+                    <a href="filters/split.html">What is a YouTube Poop?</a>
+                    <br>
+                    <a href="filters/stripe.html">What are the features of the YTPoops?</a>
+                    <br>
+                    <a href="filters/ascii.html">Influences and language</a>
+                    <br>
+                    <a href="filters/dithering.html">Contaminations from and to other styles</a>
+                    <br>
+                    <a href="filters/noise.html">From remix to video art</a>
+                    <br>
+                    <a href="filters/pixel.html">Can we lose this content forever?</a>
+                    <br>
+                    <a href="filters/mirror.html">What are the rules of YouTube?</a>
+                    <br>
+                    <a href="filters/stretch.html">Is this the internet that we want?</a>
+                    <br><br>
+                    8 filters, 8 stories</h1>
+            </div>
+
+            <!-- filters showcase -->
+            <article class="filter_section" id="fl_split">
+                <img src="assets/img/filters/split.jpg">
+                <div class="filter_desc">
+                    <p>This tool merge two videos by a line. Can be adjusted in position and orientation.</p>
+                    <p class="filter_text_source">Image from the first video considered Youtube Poop, SuperYoshi, 2004</p>
+                </div>
+            </article>
+
+            <article class="filter_section" id="fl_stripe">
+                <img src="assets/img/filters/stripe.jpg">
+                <div class="filter_desc">
+                    <p>This tool combine two different videos alternating stripes between them. Can be used instead of a traditional split screen.</p>
+                    <p class="filter_text_source">Image from the <i>YouTube Poop Tutorial</i>, MoBrosStudios, 2011</p>
+                </div>
+            </article>
+
+            <article class="filter_section" id="fl_ascii">
+                <img src="assets/img/filters/ascii.jpg">
+                <div class="filter_desc">
+                    <p>This tool convert the pixels in ASCII glyphs with a color connected. It's possible to change the density and the background color.</p>
+                    <p class="filter_text_source">Image from <i>this isn't a round</i>, pacboy, 2019</p>
+                </div>
+            </article>
+
+            <article class="filter_section" id="fl_dithering">
+                <img src="assets/img/filters/dithering.jpg">
+                <div class="filter_desc">
+                    <p>This tool apply a dithering algoritm to your video in order to reduce the quality and the weight of the infomation.</p>
+                    <p class="filter_text_source">Image from <i>The History of Vidding</i>, Hannah Hartleb, 2021</p>
+                </div>
+            </article>
+
+            <article class="filter_section" id="fl_noise">
+                <img src="assets/img/filters/noise.jpg">
+                <div class="filter_desc">
+                    <p>This tool apply a noise disturb layer. A monochromatic or colored filter can be applied to your video</p>
+                    <p class="filter_text_source">Image from <i>free the anoro</i>, Kevin11, 2018</p>
+                </div>
+            </article>
+
+            <article class="filter_section" id="fl_pixel">
+                <img src="assets/img/filters/pixel.jpg">
+                <div class="filter_desc">
+                    <p>This tool increases the pixel size your video in order to reduce the quality and the weight of the infomation.</p>
+                    <p class="filter_text_source">Image from “They BANNED me and I still don’t know why”, Nocoldiz, 2020</p>
+                </div>
+            </article>
+
+            <article class="filter_section" id="fl_mirror">
+                <img src="assets/img/filters/mirror.jpg">
+                <div class="filter_desc">
+                    <p>This tool allows to flip a video horizontally or vertically. Is possible also to mirror a video in two sides.</p>
+                    <p class="filter_text_source">Image from <i>YouTube COPYRIGHT Rules 2021 | LAWYER’s EASY Tutorial!!!</i> Ian Corzine, 2021</p>
+                </div>
+            </article>
+
+            <article class="filter_section" id="fl_stretch">
+                <img src="assets/img/filters/stretch.jpg">
+                <div class="filter_desc">
+                    <p>This tool stretch your video. From the options is possible to adjust the amount of stretching and the direction.</p>
+                    <p class="filter_text_source">Image from the meme called <i>Wide Putin</i>, lerrific, 2020</p>
+                </div>
+            </article>
+
+             <article class="filter_section" id="fl_add">
+                <img src="assets/img/filters/add.jpg">
+                <div class="filter_desc">
+                    <p>In this section you can submit a new filter for the toolkit. Add a p5.js sketch related to your edit and share it among the poopers community.</p>
+                </div>
+            </article>
+
+
+    <h1 id="homebtn"><a href="about.html">Can you recognize me?</a></h1>
+
+    </main>
+    <div id="guide_wrapper">
+        <div id="guide1">
+            <h1 id="guide_title">Can you recognize me?</h1>
+            <p id="guide_text">This space is meant to be a place for sharing <br> and empowerment concerning YouTube Poops <br>and poopers.</p>
+            <div id="guide_controls">
+                <a onclick="introduction(guideStep - 1)" id="guide_sx" style="display: none;"><p><</p></a>
+                <a onclick="introduction(guideStep + 1)" id="guide_dx"><p>></p></a>
+                <p id="guide_counter">1/3</p>
+            </div>
+        </div>
+    </div>
+
+
+
+  </body>
+</html>

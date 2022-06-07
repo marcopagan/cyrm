@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="What is an original content? / Pushing the algorithm to the boundaries / Questioning the opacity of the algorithm / Protect the Youtube Poopers">
+    <meta name="keywords" content="YTP, YouTube, YTPoop, copyright, activism, manifesto">
+    <meta name="author" content="Marco Pagan">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="Can you recognize me?"/>
+    <title>Mirror | Can you recognize me?</title>
+    <link rel="icon" type="image/png" href="../assets/img/fav.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script type="text/javascript">
+        function updateValue() {
+            document.getElementById("slider_caption").innerHTML = document.getElementById("slider0").value;
+        }
+    </script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav_label one_third">TOOLS</div>
+        <div class="nav_label two_third">STORIES</div>
+    </nav>
+
+
+    <main>
+        <!-- TOOL -->
+        <div id="tool" class="one_third tool_wrapper">
+            <h1>Mirror</h1>
+            <form action="">
+                <label for="source">Video source</label>
+                <input type="file" id="source" name="source"><br><br>
+
+                <label for="category">Side</label>
+                <select id="category" name="category">
+                    <option value="vertical">Vertical</option>
+                    <option value="horizontal">Horizontal</option>
+                </select><br><br>
+
+                <label class="check_wrapper">Flip in the middle
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <br><br>
+
+                <label for="preview">Preview</label>
+                <input type="text" id="preview" name="preview" disabled><br><br>
+
+                <label for="sendBtn"></label>
+                <input id="sendBtn" type="submit" value="Process">
+            </form>
+        </div>
+
+
+        <!-- STORY -->
+        <div id="story" class="two_third">
+            <!-- Stories wrapper -->
+            <div id="stories_wrapper">
+                <h1>What are the rules of YouTube?</h1>
+                
+                <p>It is not easy for creators to untangle Youtube's rules regarding copyright. Official guides are not always up-to-date as Content ID is updated often. Content ID is a digital fingerprinting system developed by Google which is used to easily identify and manage copyrighted content on YouTube. Videos uploaded to YouTube are compared against audio and video files registered with Content ID by content owners, looking for any matches. Content owners have the choice to have matching content blocked or to monetize it. The system began to be implemented around 2007. By 2016, it had cost $60 million to develop and led to around $2 billion in payments to copyright holders. By 2018, Google had invested at least $100 million into the system.<sup>1</sup> According to YouTube guidelines:</p>
+
+                <p style="margin-left: 50px; font-style: italic;">Creators should only upload videos that they have made or that they're authorized to use. That means they should not upload videos they didn't make, or use content in their videos that someone else owns the copyright to, such as music tracks, snippets of copyrighted programs, or videos made by other users, without necessary authorizations.</p>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9g2U12SsRns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <figcaption>YouTube official video about Content ID, 2010</figcaption>
+                <br><br>
+
+                <p>The Electronic Frontier Foundation in an article titled <i>Unfiltered: How YouTube’s Content ID Discourages Fair Use and Dictates What We See Online</i> <sup>2</sup>faced some problem of this algorithm. Katharine Trendacosta, the author, says</p>
+
+                <p style="margin-left: 50px; font-style: italic;">Content ID is incredibly complicated. Even laid out in its simplest form, it is a labyrinth where every dead end leads to the DMCA. This complexity is not a bug; it is a feature. It prevents YouTubers from challenging matches, and lets rightsholders and YouTube expend as little time and resources dealing with Content ID as possible.</p>
+
+        
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/j9WFGSEKFtM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <figcaption>Ian Corzine video about copyright on YouTube</figcaption>
+                <br><br>
+                <p>In this video, the lawyer Ian Corzine tries to clarify the rules of the platform regarding copyright. What is considered fair use? Ian clarifies how it is possible to embed third-party videos in your content without running into copyright problems.</p>
+
+                <small>
+                    <a href="https://www.youtube.com/intl/en_us/howyoutubeworks/policies/copyright/" target="blank_">Source 1 ↗</a>
+                    <br>
+                    <a href="https://www.eff.org/wp/unfiltered-how-youtubes-content-id-discourages-fair-use-and-dictates-what-we-see-online#ContentID" target="blank_">Source 2 ↗</a>
+                </small>
+            </div>
+        </div>
+
+
+    <h1 id="homebtn"><a href="../">Home</a></h1>
+
+    </main>
+
+
+
+  </body>
+</html>

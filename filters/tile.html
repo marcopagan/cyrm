@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="What is an original content? / Pushing the algorithm to the boundaries / Questioning the opacity of the algorithm / Protect the Youtube Poopers">
+    <meta name="keywords" content="YTP, YouTube, YTPoop, copyright, activism, manifesto">
+    <meta name="author" content="Marco Pagan">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="Can you recognize me?"/>
+    <title>Tile | Can you recognize me?</title>
+    <link rel="icon" type="image/png" href="../assets/img/fav.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script type="text/javascript">
+        function updateValue(num) {
+            document.getElementById("slider_caption"+num).innerHTML = document.getElementById("slider"+num).value;
+        }
+    </script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav_label one_third">TOOLS</div>
+        <div class="nav_label two_third">STORIES</div>
+    </nav>
+
+
+    <main>
+        <!-- TOOL -->
+        <div id="tool" class="one_third tool_wrapper">
+            <h1>Tile</h1>
+            <form action="">
+                <label for="source">Video source</label>
+                <input type="file" id="source" name="source"><br><br>
+
+                <label id=" desc_label" for="desc">Columns</label>
+                <input type="range" min="1" max="100" value="5" class="slider" id="slider0" oninput="updateValue(0)">
+                <small id="slider_caption0">5</small>
+
+                <label id=" desc_label" for="desc">Rows</label>
+                <input type="range" min="1" max="100" value="5" class="slider" id="slider1" oninput="updateValue(1)">
+                <small id="slider_caption1">5</small>
+
+                <label class="check_wrapper">Crop image
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <br><br>
+
+                <label for="preview">Preview</label>
+                <input type="text" id="preview" name="preview" disabled><br><br>
+
+                <label for="sendBtn"></label>
+                <input id="sendBtn" type="submit" value="Process">
+            </form>
+        </div>
+
+
+        <!-- STORY -->
+        <div id="story" class="two_third">
+            <!-- Stories wrapper -->
+            <div id="stories_wrapper">
+                <h1>What is a YouTube poop?</h1>
+                <p>Another good illustration of this fascination with the technological capabilities of digital video editing is the category of videos referred to by their producers as `YouTube Poop.’20 Emerging as a genre of their own, these often-frenetic videos piece together found television footage into irreverent, often nonsensical works. They show a particular fascination with Saturday morning cartoons from the 1990s (particularly `low' American cartoons such as The Super Mario Bros. Super Show!) and television commercials, though there are also `poops' made for anime series21 and videos from YouTube itself.22 The edits are often abrupt and jarring, and the audio is manipulated through quick cuts, changing speeds, and the introduction of alternative soundtracks. The result frequently foregoes narrative and resembles something most akin to parody or video art. Throughout the user-created content in our survey, regardless of the techniques used, the sample points clearly to a logic of cultural value centered for the most part around novelty and humor.</p>
+
+                <img src="../assets/img/stories/1_ytplogo.jpg" width="350">
+                <figcaption>Logo used for YTP</figcaption>
+
+                <small>
+                    <a href="https://en.wikipedia.org/wiki/YouTube_Poop" target="blank_">Source 1 ↗</a>
+                    <br>
+                    <a href="https://www.youtube.com/playlist?list=PLpjK416fmKwRnRbv72ksHRYEknNSaAFkd" target="blank_">Source 2 ↗</a>
+                </small>
+            </div>
+        </div>
+
+
+    <h1 id="homebtn"><a href="../">Home</a></h1>
+
+    </main>
+
+
+
+  </body>
+</html>

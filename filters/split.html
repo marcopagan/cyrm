@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="What is an original content? / Pushing the algorithm to the boundaries / Questioning the opacity of the algorithm / Protect the Youtube Poopers">
+    <meta name="keywords" content="YTP, YouTube, YTPoop, copyright, activism, manifesto">
+    <meta name="author" content="Marco Pagan">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="Can you recognize me?"/>
+    <title>Split screen | Can you recognize me?</title>
+    <link rel="icon" type="image/png" href="../assets/img/fav.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script type="text/javascript">
+        function updateValue() {
+            document.getElementById("slider_caption").innerHTML = document.getElementById("slider0").value + "°";
+        }
+    </script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav_label one_third">TOOLS</div>
+        <div class="nav_label two_third">STORIES</div>
+    </nav>
+
+
+    <main>
+        <!-- TOOL -->
+        <div id="tool" class="one_third tool_wrapper">
+            <h1>Split screen</h1>
+            <form action="">
+                <label for="source">Video source A</label>
+                <input type="file" id="source" name="source"><br><br>
+
+                <label for="source">Video source B</label>
+                <input type="file" id="source" name="source"><br><br>
+
+                <label for="category">Side</label>
+                <select id="category" name="category">
+                    <option value="vertical">Vertical</option>
+                    <option value="horizontal">Horizontal</option>
+                </select><br><br>
+
+                <label id=" desc_label" for="desc">Angle</label>
+                <input type="range" min="0" max="360" value="0" class="slider" id="slider0" oninput="updateValue()">
+                <small id="slider_caption">0°</small>
+
+                <label for="preview">Preview</label>
+                <input type="text" id="preview" name="preview" disabled><br><br>
+
+                <label for="sendBtn"></label>
+                <input id="sendBtn" type="submit" value="Process">
+            </form>
+        </div>
+
+
+        <!-- STORY -->
+        <div id="story" class="two_third">
+            <!-- Stories wrapper -->
+            <div id="stories_wrapper">
+                <h1>What is a YouTube Poop?</h1>
+                <br>
+                <img src="../assets/img/stories/1_ytplogo.jpg" width="400">
+                <figcaption>Logo used for YTP</figcaption>
+                <br><br>
+                <p>YouTube Poop, often abbreviated as YTP, is a genre of video mashups created by remixing or editing existing media—including (but not exclusive to) clips from popular cartoons, TV shows and commercials. According to Wikipedia<sup>1</sup>, the source material often carries cultural significance which is fragmented and appropriated into a new media for "humorous, satirical, obscene, profane, as well as annoying, confusing, or dramatic purposes". Meanwhile, meme database <i>Know Your Meme</i> defines the goal of YouTube Poop to create "purposely annoying videos that delight those who make them and irritate those tricked into watching".<sup>2</sup></p>
+                <p>The video regarded as the first YouTube Poop was uploaded on the website SheezyArt, as opposed to YouTube, circa 2004: <i>The Adventures of Super Mario Bros. 3 REMIXED!!!</i>, or what is now known as "I'D SAY HE'S HOT ON OUR TAIL", by YouTube user SuperYoshi. It was created with Windows Movie Maker and uses clips from the 1990 animated television series The Adventures of Super Mario Bros. 3, which has been regarded as kitsch by fans of the Mario franchise, as a primary source. It exhibits stylistic and aesthetical staples of YouTube Poop, including repetition of clips for comedic effect (the video name is a particularly campy pun spoken by Luigi that is repeated throughout the video), and critically disregarded media as a video source. In late 2006, cutscenes from games released on the Philips CD-i platform (most notably Hotel Mario, Link: The Faces of Evil, and Zelda: The Wand of Gamelon) as well as the animated series Adventures of Sonic the Hedgehog and the 1995 DOS game I.M. Meen were incredibly common sources in YTPs, as they had been ironically acclaimed for deviating from the quality expected of their respective franchises.</p>
+                <br>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LTg1FIFiwz4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <figcaption>The first poop by SuperYoshi</figcaption>
+                <br><br>
+
+                <p>In the book <i>YouTube: Online Video and Participatory Culture</i> <sup>3</sup> Burgess and Green (2013) describe the YTP phenomenon in this way:<br></p>
+                <p style="margin-left: 50px; font-style: italic;">Another good illustration of this fascination with the technological capabilities of digital video editing is the category of videos referred to by their producers as `YouTube Poop.’20 Emerging as a genre of their own, these often-frenetic videos piece together found television footage into irreverent, often nonsensical works. They show a particular fascination with Saturday morning cartoons from the 1990s (particularly `low' American cartoons such as The Super Mario Bros. Super Show!) and television commercials, though there are also `poops' made for anime series21 and videos from YouTube itself.22 The edits are often abrupt and jarring, and the audio is manipulated through quick cuts, changing speeds, and the introduction of alternative soundtracks. The result frequently foregoes narrative and resembles something most akin to parody or video art. Throughout the user-created content in our survey, regardless of the techniques used, the sample points clearly to a logic of cultural value centered for the most part around novelty and humor.</p>
+
+                
+
+                <small>
+                    <a href="https://en.wikipedia.org/wiki/YouTube_Poop" target="blank_">Source 1 ↗</a>
+                    <br>
+                    <a href="https://knowyourmeme.com/memes/youtube-poop-ytp" target="blank_">Source 2 ↗</a>
+                    <br>
+                    <a href="https://books.google.nl/books?id=0NsWtPHNl88C" target="blank_">Source 3 ↗</a>
+                </small>
+            </div>
+        </div>
+
+
+    <h1 id="homebtn"><a href="../">Home</a></h1>
+
+    </main>
+
+
+
+  </body>
+</html>
